@@ -1,0 +1,169 @@
+{
+  "id": "97346dc7-1e4b-420f-8d60-81adb90e79c7",
+  "version": "2.0",
+  "name": "Prueba Selenium",
+  "url": "https://computer-database.gatling.io",
+  "tests": [{
+    "id": "2d5774b9-15cc-4413-af73-89357bf2cec8",
+    "name": "Agregar computador a database",
+    "commands": [{
+      "id": "92d26a73-9c8e-40c2-a721-25185dbcae81",
+      "comment": "",
+      "command": "open",
+      "target": "/computers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db7dbf6c-52bb-4979-afbb-fe74f0d3cc7f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d65256de-c3fa-4a13-8ff0-fcca722beaae",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["linkText=Add a new computer", "linkText"],
+        ["css=#add", "css:finder"],
+        ["xpath=//a[contains(text(),'Add a new computer')]", "xpath:link"],
+        ["xpath=//a[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='actions']/form/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/computers/new')]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add a new computer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0640078-b899-459a-a6da-7aa3e5313499",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61029a4c-ac56-4835-87f1-64ffda09b7a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "computador de prueba"
+    }, {
+      "id": "3591c452-3651-45fb-a27b-0aefa7acfdf8",
+      "comment": "",
+      "command": "click",
+      "target": "id=introduced",
+      "targets": [
+        ["id=introduced", "id"],
+        ["name=introduced", "name"],
+        ["css=#introduced", "css:finder"],
+        ["xpath=//input[@id='introduced']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95e1702c-52dd-46e8-ae27-9f97abd09f02",
+      "comment": "",
+      "command": "type",
+      "target": "id=introduced",
+      "targets": [
+        ["id=introduced", "id"],
+        ["name=introduced", "name"],
+        ["css=#introduced", "css:finder"],
+        ["xpath=//input[@id='introduced']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1980-11-24"
+    }, {
+      "id": "cfeaba68-b4c9-41d3-b4ed-cd21a2871ef8",
+      "comment": "",
+      "command": "click",
+      "target": "id=discontinued",
+      "targets": [
+        ["id=discontinued", "id"],
+        ["name=discontinued", "name"],
+        ["css=#discontinued", "css:finder"],
+        ["xpath=//input[@id='discontinued']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "788df035-5794-4867-ac52-b6da42989e8a",
+      "comment": "",
+      "command": "type",
+      "target": "id=discontinued",
+      "targets": [
+        ["id=discontinued", "id"],
+        ["name=discontinued", "name"],
+        ["css=#discontinued", "css:finder"],
+        ["xpath=//input[@id='discontinued']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "1996-12-03"
+    }, {
+      "id": "84b8d5d7-d74a-4d47-83f9-14211fde6f4f",
+      "comment": "",
+      "command": "click",
+      "target": "id=company",
+      "targets": [
+        ["id=company", "id"],
+        ["name=company", "name"],
+        ["css=#company", "css:finder"],
+        ["xpath=//select[@id='company']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[4]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74774a4c-01d2-4fd3-b822-0413730e3368",
+      "comment": "",
+      "command": "select",
+      "target": "id=company",
+      "targets": [],
+      "value": "label=Thinking Machines"
+    }, {
+      "id": "7707040c-9b91-4c4f-8225-4e771d423c3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primary",
+      "targets": [
+        ["css=.primary", "css:finder"],
+        ["xpath=//input[@value='Create this computer']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "049c8038-5153-4431-b30d-8237160579e8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2d5774b9-15cc-4413-af73-89357bf2cec8"]
+  }],
+  "urls": ["https://computer-database.gatling.io/"],
+  "plugins": []
+}
